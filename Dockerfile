@@ -1,9 +1,9 @@
-FROM mcr.microsoft.com/dotnet/framework/sdk:4.8 AS build
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS build
 WORKDIR /app
 
 COPY SampleWebApplication .
-RUN powershell nuget restore; msbuild /p:Configuration=Release /p:publishUrl=/out /p:DeployDefaultTarget=WebPublish /p:DeployOnBuild=True /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True
+RUN powershell nuget restore; dotnet build -c Release -o /out
 
-FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 WORKDIR /app
 COPY --from=build /out /inetpub/wwwroot
