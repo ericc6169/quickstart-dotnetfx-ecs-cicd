@@ -3,9 +3,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Owin;
-using MVC5App.Models;
+using MVC5App_OLD.Models;
 
-namespace MVC5App
+namespace MVC5App_OLD
 {
     public partial class Startup
     {

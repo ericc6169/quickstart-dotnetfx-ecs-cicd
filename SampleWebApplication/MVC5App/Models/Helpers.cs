@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Web;
 
-namespace MVC5App.Models
+namespace MVC5App_OLD.Models
 {
     public class Helpers
     {

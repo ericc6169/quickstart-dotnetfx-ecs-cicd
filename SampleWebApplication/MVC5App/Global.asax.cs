@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace MVC5App
+namespace MVC5App_OLD
 {
     public class MvcApplication : System.Web.HttpApplication
     {
