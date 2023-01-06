@@ -23,30 +23,8 @@ textarea {
     max-width: 280px;
 }
 
-.video-responsive {
-    float: none;
-    clear: both;
-    width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-}
-.video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.blocktext {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-.blocktext img{
-    width:70%;
-    height:70%;
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
 }

@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MVC5App_OLD;
-using MVC5App_OLD.Controllers;
+using MVC5App;
+using MVC5App.Controllers;
 
-namespace MVC5App_OLD.Tests.Controllers
+namespace MVC5App.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
